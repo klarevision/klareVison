@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>aKinsola damiLARE</title>
+    <style>
+        :root{
+	--main-background: #0b0c0f;
+	--main-fonts-color: #fff;
+	--main-decor-color:#00a9e2;
+    --main-header-background:#21252e;
+	--main-font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+header{
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    background: transparent;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+}
+.logo img{
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+main{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--main-background);
+}
+.nav-show{
+	opacity: 0;
+}
+
+header:hover{
+	opacity: 1;
+	background: var(--main-header-background);
+}
+a.nav-link{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.active{
+	background: var(--main-decor-color);
+}
+
+.nav-link:hover {
+	color: #000000;
+    background: var(--main-decor-color);
+}
+#home{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#home .filter{
+	background: url('images/klare.JPG') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.20;
+}  
+.social-media{
+	padding: 10px;
+	display: flex;
+	position: center;
+    align-items: space-around;
+	justify-content:center;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 2rem;
+    text-align:center;
+    display: inline-block;
+	color: var(--main-fonts-color);
+}
+
+.social-media a i{
+	cursor: pointer;
+}
+
+.social-media  a:hover {
+	color: var(--main-decor-color);
+	text-shadow: 0 0 50px var(--main-decor-color);
+}
+.intro {
+	text-align:center;
+    color: var(--main-fonts-color);
+	z-index: 1;
+	margin: auto;
+	padding: 20px;
+}
+
+.intro  p{
+    margin: 5px;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+	text-align:center;
+}
+
+ h3{
+	padding-bottom: 15px;
+  letter-spacing: normal;
+  font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 60px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo"  href="#home">
+        <img src="images\klarelogo.png" alt="klare logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar" ><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+ <main>
+    <div id="home">
+        <div class="filter"></div>
+        <section class="intro">
+         <h3>aKinsola damiLARE.<hr></h3>
+         <p>SOFTWARE DEVELOPER.</p>
+<p>I am a self-taught frontend developer and I love what I do. I started out as a hobbyist, but quickly realized that this was my passion. I enjoy working on innovative projects that push the boundaries of what is possible.</p>
+             
+    <div id="contact">
+        <!--────social media links─────-->
+         <h3>Contact.<hr></h3>
+         <p>Feel free to contact me on my social media.</p>
+          <div class="social-media">
+            <a href="https://codepen.io/klarevision" target="_blank"><i class='fab fa-codepen'></i></a>
+            <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a href="https://github.com/klarevision" target="_blank"><i class='fab fa-github'></i></a>
+            <a href="https://www.linkedin.com/in/oluwadamilare-akinsola-644594164/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+    </section> 
+</div>  
+ </main>
+    
+    </div>
+</body>
+</html>
